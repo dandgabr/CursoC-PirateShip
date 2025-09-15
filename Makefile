@@ -9,9 +9,9 @@ BINDIR = bin
 $(shell mkdir -p $(BINDIR))
 
 # Alvos principais
-.PHONY: all clean aula1 aula2 aula3 aula4 test help
+.PHONY: all clean aula1 aula2 aula3 aula4 aula5 aula6 test help
 
-all: aula1 aula2 aula3 aula4
+all: aula1 aula2 aula3 aula4 aula5 aula6
 
 help:
 	@echo "🏴‍☠️ CursoC-PirateShip - Sistema de Build"
@@ -19,7 +19,10 @@ help:
 	@echo "  make all     - Compila todos os exemplos"
 	@echo "  make aula1   - Compila exemplos da aula 1"
 	@echo "  make aula2   - Compila exemplos da aula 2"
+	@echo "  make aula3   - Compila exemplos da aula 3"
 	@echo "  make aula4   - Compila exemplos da aula 4"
+	@echo "  make aula5   - Compila exemplos da aula 5"
+	@echo "  make aula6   - Compila exemplos da aula 6"
 	@echo "  make test    - Executa todos os exemplos (teste rápido)"
 	@echo "  make clean   - Remove executáveis"
 	@echo "  make help    - Mostra esta ajuda"
@@ -61,6 +64,24 @@ $(BINDIR)/loops: aula3/loops.c
 aula4: $(BINDIR)/funcoes_basicas
 
 $(BINDIR)/funcoes_basicas: aula4/funcoes_basicas.c
+	$(CC) $(CFLAGS) $< -o $@
+
+# Aula 5: Arrays e Ponteiros Básicos
+aula5: $(BINDIR)/arrays_basicos $(BINDIR)/ponteiros_intro
+
+$(BINDIR)/arrays_basicos: aula5/arrays_basicos.c
+	$(CC) $(CFLAGS) $< -o $@
+
+$(BINDIR)/ponteiros_intro: aula5/ponteiros_intro.c
+	$(CC) $(CFLAGS) $< -o $@
+
+# Aula 6: Estruturas e Arquivos
+aula6: $(BINDIR)/estruturas $(BINDIR)/arquivos_exemplo
+
+$(BINDIR)/estruturas: aula6/estruturas.c
+	$(CC) $(CFLAGS) $< -o $@
+
+$(BINDIR)/arquivos_exemplo: aula6/arquivos_exemplo.c
 	$(CC) $(CFLAGS) $< -o $@
 
 # Teste de compilação (executa rapidamente sem interação)

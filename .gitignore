@@ -53,3 +53,13 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Compiled binaries directory
+bin/
+!bin/.gitkeep
+
+# Temporary files created by examples
+*.txt
+*.csv
+!exercicios/*.txt
+!docs/*.txt
