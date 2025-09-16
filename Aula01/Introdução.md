@@ -107,11 +107,13 @@ Existem dois tipos de comentários.
 ```c
 //comentário de uma linha
 ```
+
 ```c
 /*
 Comentários de múltiplas linhas
 Essa é a segunda linha do comentário
 */
+```
 
 # Tipos de dados
 
@@ -138,6 +140,7 @@ Uma é um espaço reservado na memória do computador para armazenar dados tempo
 ```c
 int main() {
     char caractere1 = 'A'; // Declaração de uma variável do tipo caractere e atribui o valor A
+    
     char caractere2; // Declaração de uma variável do tipo caractere e não atribui valor a ela
 
     int numero1, numero2 = 10; // Decl1ara duas variáveis, mas atribui o valor 10 apenas a numero2
