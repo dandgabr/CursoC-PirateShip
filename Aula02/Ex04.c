@@ -1,0 +1,1 @@
+/* Fazer um programa em "C" que pergunte um valor em graus Fahrenheit e  imprime no vídeo o correspondente em graus Celsius */
