@@ -7,10 +7,10 @@ int main()
     // Operações aritméticas básicas
     printf("a + b = %d\n", a + b);  // Soma: 10 + 3 = 13
     printf("a - b = %d\n", a - b);  // Subtração: 10 - 3 = 7
-    printf("a * b = %d\n", a * b);  // Multiplicação: 10 * 3 = 30
-    printf("a / b = %d\n", a / b);  // Divisão inteira: 10 / 3 = 3 (descarta os decimais)
+    printf("a * b = %d\n", a * b);  // Multiplicação: 10 * 3 = 30cle
+    printf("a / b = %d\n", a / b);  // Divisão: 10 / 3 = 3.333333
     printf("a %% b = %d\n", a % b); // Módulo (resto da divisão): 10 % 3 = 1
-    // Obs: "%%" é usado porque "%" sozinho é interpretado como especificador de formato.
+    //  Obs: "%%" é usado porque "%" sozinho é interpretado como especificador de formato.
 
     // Operadores de incremento e decremento
     a++; // Incrementa a em 1 -> a agora é 11
