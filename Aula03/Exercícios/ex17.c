@@ -1,0 +1,1 @@
+// Implemente um menu básico usando um switch que permite escolher operações aritméticas entre dois números e imprimir o resultado.

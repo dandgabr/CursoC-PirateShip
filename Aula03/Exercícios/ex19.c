@@ -1,0 +1,1 @@
+// Demonstre o uso de break e continue em loops para controlar o fluxo da repetição, com exemplos claros que mostram quando cada um será acionado.

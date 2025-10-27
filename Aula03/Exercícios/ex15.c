@@ -1,0 +1,1 @@
+// Construa um programa que usa operadores relacionais e lógicos para validar múltiplas condições em conjunto, usando &&, || e !.

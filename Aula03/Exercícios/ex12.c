@@ -1,0 +1,2 @@
+// Escreva um programa para declarar duas variáveis inteiras, inicializar com valores e depois calcular a soma e a subtração desses valores.Imprima os resultados.
+// Amplie o exercício anterior para incluir operações de multiplicação e divisão entre os dois números, mostrando os resultados formatados.

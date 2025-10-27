@@ -1,0 +1,1 @@
+// Escreva um programa que declare quatro variáveis, uma de cada tipo : char, int, float e double.

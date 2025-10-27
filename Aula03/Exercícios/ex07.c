@@ -1,0 +1,1 @@
+// Escreva um programa que realize uma divisão usando operandos inteiros, mas obtenha o resultado em ponto flutuante, aplicando o cast para double em um dos operandos.

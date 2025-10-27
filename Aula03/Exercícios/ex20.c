@@ -1,0 +1,1 @@
+// Crie um loop infinito usando while(1) e saia dele com break quando uma condição específica (como entrada do usuário) for satisfeita.

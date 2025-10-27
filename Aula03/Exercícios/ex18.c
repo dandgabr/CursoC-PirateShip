@@ -1,0 +1,1 @@
+// Escreva programas que utilizem while, do-while e for para iterar até uma condição não ser mais satisfeita. Por exemplo, incrementando um contador até chegar a um valor limite e imprimindo a cada passo.

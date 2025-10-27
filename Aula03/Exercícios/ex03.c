@@ -1,0 +1,1 @@
+// Escreva um programa para declarar e inicializar quatro variáveis dos tipos char, int, float e double, cada uma com um valor inicial apropriado.

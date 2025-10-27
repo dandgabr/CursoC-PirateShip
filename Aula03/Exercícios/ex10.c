@@ -1,0 +1,1 @@
+// Faça um programa que declare uma variável inteira com valor 2 e use a instrução switch para mostrar mensagens diferentes para os valores 1, 2 e 3, e uma mensagem padrão para outros casos.

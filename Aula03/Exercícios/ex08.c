@@ -1,0 +1,1 @@
+// Desenvolva um programa que verifique se duas variáveis inteiras possuem valores iguais e imprima uma mensagem correspondente.

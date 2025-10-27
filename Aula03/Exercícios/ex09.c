@@ -1,0 +1,1 @@
+// Escreva um código que checa se uma variável inteira está entre 50 e 100(exclusivo)usando operadores lógicos e relacionais, e imprime uma mensagem com base no resultado.

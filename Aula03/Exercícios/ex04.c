@@ -1,0 +1,1 @@
+// Escreva um programa que inicialize as quatro variáveis anteriores e imprima seus valores no console usando a função printf com os especificadores de formato corretos(% c, % d, % f).

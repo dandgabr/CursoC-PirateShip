@@ -1,0 +1,1 @@
+// Escreva um programa que inicialize dois números inteiros e declare uma terceira variável inteira que será a soma dos dois anteriores.Imprima o resultado.

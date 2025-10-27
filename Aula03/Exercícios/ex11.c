@@ -1,0 +1,1 @@
+// Implemente um programa que incremente e imprima uma variável inteira cinco vezes usando tanto um loop for quanto um while.
