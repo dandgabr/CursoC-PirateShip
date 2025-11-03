@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include <locale.h>
+
 int main(void)
 {
+    setlocale(LC_ALL, "pt_BR.UTF-8");
     int x = 10;
     int y = 30;
     double d = x / y;                // Conversão implícita, mas ambos int: resultado 0.0

@@ -12,7 +12,7 @@ int main(void)
 {
     setlocale(LC_ALL, "pt_BR.UTF-8");
     // Declara e inicializa a variável x com o valor 123
-    int x = 123;
+    int x = 100;
 
     // Verifica se x é menor que 150
     // Se a condição for verdadeira, executa o printf

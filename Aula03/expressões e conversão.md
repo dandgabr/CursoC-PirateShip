@@ -5,7 +5,7 @@ Inicializar uma variável significa declarar e atribuir um valor inicial em uma 
 ```C
 int x = 10;      // Inicialização de variável inteira
 char c = 'a';    // Inicialização de char
-float f = 1.5f;  // Inicialização de float
+float f = 1.5;  // Inicialização de float
 double d = 3.14; // Inicialização de double
 ```
 

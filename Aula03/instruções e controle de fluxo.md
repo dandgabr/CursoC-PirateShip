@@ -53,7 +53,6 @@ int main(void) {
     int x = 123;
     if (x < 150)
         printf("O x é menor que 150.\n");
-}
 ```
 
 Neste caso, a mensagem será exibida porque a condição é verdadeira. O bloco pode incluir múltiplas instruções, delimitadas por chaves {}.​
