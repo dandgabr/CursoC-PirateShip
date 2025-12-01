@@ -56,3 +56,13 @@ dkms.conf
 
 #Visual Code
 .vscode/
+
+# Documents
+
+*.pdf
+*.docx
+*.doc
+*.odt
+*.rtf
+*.tex
+*.wpd
