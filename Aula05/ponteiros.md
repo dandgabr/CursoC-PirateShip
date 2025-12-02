@@ -75,9 +75,9 @@ int main() {
     setlocale(LC_ALL, "pt_BR.UTF-8");
     int vetor[5] = {10, 20, 30, 40, 50};
     int *ptr = vetor;
-    printf("Endereço inicial: %p\n", ptr);
+    printf("Endereço inicial: %p\n", (void*)ptr);
     ptr++; // Avança para o próximo inteiro
-    printf("Endereço após incremento: %p\n", ptr);
+    printf("Endereço após incremento: %p\n", (void*)ptr);
     return 0;
 }
 ```
@@ -120,7 +120,7 @@ int main() {
 }
 ```
 
-#Arrays de ponteiros
+# Arrays de ponteiros
 
 Arrays de ponteiros armazenam endereços de variáveis ou strings, permitindo acesso dinâmico e flexível.
 
@@ -137,6 +137,47 @@ int main() {
     return 0;
 }
 ```
+
+## Alocação dinâmica de memória
+
+A alocação dinâmica de memória é um recurso fundamental em C, permitindo que programas solicitem espaço de memória em tempo de execução. Isso é especialmente útil quando não se sabe, em tempo de compilação, quanto espaço será necessário para armazenar dados. As funções mais importantes para esse fim são `malloc`, `calloc` e `realloc`, todas definidas na biblioteca `stdlib.h`.
+
+### Malloc
+
+A função malloc (memory allocation) aloca um bloco de memória de tamanho especificado e retorna um ponteiro para o início desse bloco. Se não houver memória suficiente, ela retorna NULL. Exemplo:​
+
+```c
+int *p = (int *) malloc(x * sizeof(int));
+```
+
+Neste caso, são alocados `x` inteiros. É fundamental verificar se o retorno é NULL antes de usar o ponteiro, pois tentar acessar um ponteiro nulo pode causar falhas no programa.
+
+### Calloc
+
+A função `calloc` (contiguous allocation) aloca memória para um array de elementos e inicializa todos os bytes com zero. Ela recebe dois argumentos: o número de elementos (`x`) e o tamanho de cada elemento. Exemplo:
+
+```c
+int *p = (int *) calloc(x, sizeof(int));
+```
+
+A principal diferença para malloc é que calloc garante que a memória alocada seja zerada, o que pode ser útil para evitar valores indesejados ("lixo") na memória.
+
+### realloc
+
+A função `realloc` permite redimensionar um bloco de memória já alocado por `malloc` ou `calloc`. Ela recebe um ponteiro para o bloco original e o novo tamanho desejado (`y`). Exemplo:
+
+```c
+p = (int *) realloc(p, y * sizeof(int));
+```
+
+Se o novo tamanho for maior, o espaço adicional não é inicializado; se for menor, parte do bloco é liberada. Se não houver memória suficiente, realloc retorna NULL e o bloco original permanece inalterado.
+
+### Consideração sobre alocação
+
+- Sempre verifique se as funções de alocação retornaram `NULL` antes de usar o ponteiro;
+- Após usar a memória alocada, libere-a com free para evitar vazamentos;
+- Use `calloc` quando precisar garantir que a memória esteja zerada; use `malloc` para melhor desempenho quando a inicialização não é necessária;
+- `realloc` é útil para ajustar o tamanho de vetores ou estruturas dinamicamente, mas tome cuidado com o retorno e com a necessidade de reatribuir o ponteiro.
 
 ## Preocupações de segurança ao lidar com ponteiros
 
